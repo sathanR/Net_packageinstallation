@@ -1,0 +1,37 @@
+13-4-2023
+
+
+connection blw server to server
+ssh username@ip --- for server connection
+
+first we have to give permission for both that particular files on both servers
+sudo chmod 777 filename   --- fot that particular file permissin
+sudo chmod 777 /file/ *   --- for that file in content
+sudo scp filename username@ip:/destintn/    ---- for copy a file from one server to another server
+sudo scp -r /dirname/ username@ip:/destntn/   -----for copy a dir from one server to another server
+sudo scp -r /dirname/* username@ip:/destntn/   ---- for alll files on that dirname 
+
+how to install packagess
+
+sudo apt-get update---- for update a package
+sudo apt-get install apache2 ---- for install a package
+sudo server apache2 status  ---- for package status
+sudo reboot  ---- for server restart
+sudo service ssh restart---- for particular package restart
+
+
+in aws we have to update inbounds rules in security group with that partiicular package port nmbr
+
+
+ps -ef ---- to display the current procees terminal
+sudo  kill -9 portnmbr  ----- for end the process 
+sudo kill -15 portnmbr   ---- for instant end process
+ps -ef | grep searchfilename   ---- filtarization process
+sudo vi /etc/hostname/  ---- for change name
+:%s/old/new/g  ---- find and replace
+find / -name source  ---- to find a file in server 
+	
+
+
+
+
